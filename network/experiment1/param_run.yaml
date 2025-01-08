@@ -1,0 +1,138 @@
+Camera:
+  baseline: 398.6
+  convert2photons: true
+  e_per_adu: 5.0
+  em_gain: 100.0
+  px_size:
+  - 127.0
+  - 117.0
+  qe: 1.0
+  read_sigma: 58.8
+  spur_noise: 0.0015
+CameraPreset: null
+Evaluation:
+  dist_ax: 500.0
+  dist_lat: 250.0
+  dist_vol: null
+  match_dims: 3
+Hardware:
+  device: cuda:0
+  device_simulation: cuda:0
+  num_worker_train: 4
+  torch_multiprocessing_sharing_strategy: null
+  torch_threads: 4
+  unix_niceness: 0
+HyperParameter:
+  arch_param:
+    activation: ELU
+    depth: null
+    depth_bg: null
+    depth_shared: 2
+    depth_union: 2
+    init_custom: true
+    initial_features: 48
+    initial_features_bg: null
+    inter_features: 48
+    norm: null
+    norm_bg: null
+    norm_bg_groups: null
+    norm_groups: null
+    norm_head: null
+    norm_head_groups: null
+    p_dropout: null
+    pool_mode: StrideConv
+    recpt_bg: null
+    skip_gn_level: null
+    up_mode: upsample
+    upsample_mode: nearest
+    use_last_nl: null
+  architecture: SigmaMUNet
+  auto_restart_param:
+    num_restarts: 5
+    restart_treshold: 100
+  batch_size: 32
+  channels_in: 5
+  channels_out: null
+  chweight_stat:
+  - 1.0
+  - 1.0
+  disabled_attributes: null
+  ds_lifetime: null
+  emitter_label_photon_min: 100.0
+  epoch_0: null
+  epochs: 500
+  fgbg_factor: null
+  grad_mod: true
+  learning_rate_scheduler: StepLR
+  learning_rate_scheduler_param:
+    gamma: 0.9
+    step_size: 10
+  loss_impl: MixtureModel
+  max_number_targets: 250
+  moeller_gradient_rescale: false
+  opt_param:
+    lr: 0.0006
+    weight_decay: 0.1
+  optimizer: AdamW
+  photon_threshold: null
+  pseudo_ds_size: 10000
+InOut:
+  calibration_file: psfmod/spline_calibration_3dcal.mat
+  checkpoint_init: null
+  experiment_out: network\experiment1
+  model_init: null
+Meta:
+  version: vINVALID-recent-0.10.1
+PostProcessing: SpatialIntegration
+PostProcessingParam:
+  raw_th: 0.5
+Scaling:
+  bg_max: 240.0
+  input_offset: 110.0
+  input_scale: 140.0
+  phot_max: 31000.0
+  z_max: 960.0
+Simulation:
+  bg_uniform:
+  - 20.0
+  - 200.0
+  density: null
+  emitter_av: 25
+  emitter_extent:
+  - - -0.5
+    - 39.5
+  - - -0.5
+    - 39.5
+  - - -800
+    - 800
+  img_size:
+  - 40
+  - 40
+  intensity_mu_sig:
+  - 7000.0
+  - 3000.0
+  intensity_th: null
+  lifetime_avg: 1.0
+  mode: acquisition
+  photon_range: null
+  psf_extent:
+  - - -0.5
+    - 39.5
+  - - -0.5
+    - 39.5
+  - null
+  roi_auto_center: false
+  roi_size: null
+  xy_unit: px
+TestSet:
+  frame_extent:
+  - - -0.5
+    - 39.5
+  - - -0.5
+    - 39.5
+  - null
+  img_size:
+  - 40
+  - 40
+  mode: simulated
+  test_size: 512

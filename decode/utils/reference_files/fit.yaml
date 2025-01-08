@@ -1,0 +1,20 @@
+# Meta file for fitting.
+
+# overwrite camera parameters, e.g. em_gain and specify if dimensions should be mirrored
+Camera:
+  mirror_dim:
+
+Hardware:
+  device: cuda:0
+  worker: 4
+
+Frames:
+  path:
+  range:  # leave empty for all frames or specify tuple (python indexing, e.g. [0, 3] which will fit frames 0, 1, 2
+
+Model:
+  path:
+  param_path:
+
+Output:
+  path:  # use one of the supported suffixes (.h5, .csv etc.)
