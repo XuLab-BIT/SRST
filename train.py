@@ -458,7 +458,7 @@ if __name__ == '__main__' :
 
 
     import Choose_Device as Device
-    import network.lstm_network_as_hsnr.Net.CNNLSTM as LS
+    import Net.CNNLSTM as LS
     # model = IST(1, seq_len=param.HyperParameter.channels_in, initial_features=32, sigma_eps_default=0.2, model_dim=32, num_heads=4, depth=3).to(Device.device)
     model = LS.CNNBiLSTM(1, 10, seq_len=param.HyperParameter.channels_in, pad_convs=True, depth=2,initial_features=48, norm=None, norm_groups=None, sigma_eps_default=0.005).to(Device.device)
 
