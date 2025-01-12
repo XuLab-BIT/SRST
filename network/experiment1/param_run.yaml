@@ -50,8 +50,8 @@ HyperParameter:
   auto_restart_param:
     num_restarts: 5
     restart_treshold: 100
-  batch_size: 32
-  channels_in: 5
+  batch_size: 24
+  channels_in: 9
   channels_out: null
   chweight_stat:
   - 1.0
@@ -79,7 +79,7 @@ HyperParameter:
 InOut:
   calibration_file: psfmod/spline_calibration_3dcal.mat
   checkpoint_init: null
-  experiment_out: network\experiment1
+  experiment_out: network\experiment1_005
   model_init: null
 Meta:
   version: vINVALID-recent-0.10.1
