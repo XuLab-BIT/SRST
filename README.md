@@ -2,6 +2,8 @@
 
 # SRST
 
+![image-20250112192933910](C:\Users\q8059\AppData\Roaming\Typora\typora-user-images\image-20250112192933910.png)
+
 ### Introduction
 
 Single-molecule localization microscopy (SMLM) is a powerful imaging technique that surpasses the diffraction limit of light by computationally localizing individual fluorescent molecules. However, achieving sufficient spatial resolution in SMLM requires extensive frame acquisition, limiting temporal resolution. Increasing the density of fluorescent molecules is a common strategy to enhance temporal resolution, but this often results in overlapping point spread functions (PSFs) and computational challenges in distinguishing adjacent molecules.
