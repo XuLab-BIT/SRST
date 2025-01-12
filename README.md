@@ -2,7 +2,7 @@
 
 # SRST
 
-![workflow](.\Net\workflow.jpg) 
+![workflow](./Net/workflow.jpg) 
 
 ### Introduction
 
