@@ -4,13 +4,13 @@
 
 ![workflow](./Net/workflow.jpg) 
 
-### Introduction
+## Introduction
 
 Single-molecule localization microscopy (SMLM) is a powerful imaging technique that surpasses the diffraction limit of light by computationally localizing individual fluorescent molecules. However, achieving sufficient spatial resolution in SMLM requires extensive frame acquisition, limiting temporal resolution. Increasing the density of fluorescent molecules is a common strategy to enhance temporal resolution, but this often results in overlapping point spread functions (PSFs) and computational challenges in distinguishing adjacent molecules.
 
 We developed a deep learning-driven approach, termed super-resolution spatiotemporal information integration (SRST), for the precise three-dimensional localization of ultra-high-density molecules.
 
-### Setup
+## Setup
 
 Clone the repo and build the python environment.
 
@@ -37,7 +37,7 @@ You can train networks that process different data by modifying the import file 
 
 Fitting.ipynb provides the function of fitting the original data to generate super-resolution reconstruction. It is necessary to provide a trained network and data to be fitted.
 
-### Acknowledgements
+## Acknowledgements
 
 This implementation is based on code from several repositories.
 
