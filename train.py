@@ -402,7 +402,7 @@ def ship_device(x, device: Union[str, torch.device]):
 
 if __name__ == '__main__' :
     from decode.utils import param_io
-    param_file = 'network/loc/lsnr/lstm_network_9ch_3d_005/param_run.yaml'
+    param_file = 'network/experiment1/param_run.yaml'
     param = param_io.load_params(param_file)
     param.Meta.version = decode.utils.bookkeeping.decode_state()
     param = decode.utils.param_io.autoset_scaling(param)
@@ -412,10 +412,10 @@ if __name__ == '__main__' :
     param.InOut.calibration_file = calibration_file
 
     #@markdown > Set the output directory(!), i.e. the folder in which you'll find the model during/after training. You may want to change this to a folder in your Google Drive, e.g. `gdrive/My Drive/[your_folder]`
-    model_dir = './network/loc/lsnr/lstm_network_9ch_3d_005' #@param {type:"string"}
+    model_dir = 'network/experiment1' #@param {type:"string"}
 
     #@markdown > Set the directory in which the checkpoints should be saved. This is useful if colab times out or crashes and you want to continue training. Unless you have reasons, you should use the same directory as for the model.
-    ckpt_dir = './network/loc/lsnr/lstm_network_9ch_3d_005'  #@param {type:"string"}
+    ckpt_dir = 'network/experiment1'  #@param {type:"string"}
     from_ckpt = False
     model_dir = Path(model_dir)
 
