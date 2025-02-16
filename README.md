@@ -31,7 +31,7 @@ python train.py
 You can train networks that process different data by modifying the import file link in the python file. The modifiable include : 
 
 - param_file: Set camera parameters, training data parameters and network hyperparameters. 
-- calibration_file:  Set the PSF
+- calibration_file:  Set the PSF.
 
 ## Fitting
 
